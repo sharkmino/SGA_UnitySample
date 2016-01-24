@@ -1,14 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
     private Rigidbody rb;
+    public Text countText;
+    public Text winText;
+
     public float speed;
+    private int count;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        count = 0;
+        SetCountText();
+        winText.text = "";
     }
 
 	// 프레임을 렌더링하기 전에 호출
@@ -28,5 +36,25 @@ public class PlayerController : MonoBehaviour {
 
         rb.AddForce(movement * speed);
 
+    }
+
+    // 게임 오브젝트가 트리거 콜라이더를 처음 접촉하면
+    // Unity로부터 호출
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Pick Up"))
+        {
+            other.gameObject.SetActive(false);
+            ++count;
+            SetCountText(); 
+        }
+
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+        if (count >= 14)
+            winText.text = "You Win!";
     }
 }

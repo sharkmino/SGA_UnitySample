@@ -1,0 +1,26 @@
+Initialize engine version: 4.6.3f1 (4753d8b6ef2b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 765M  (ID=0x11e2)
+    Vendor:   NVIDIA
+    VRAM:     1991 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI.Hid> Failed to create device file:
+ 2 지정된 파일을 찾을 수 없습니다.
+
+ 
+(Filename:  Line: 54)
+
+<RI> Input initialized.
+Platform assembly: C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Project\GitHub\SGA_UnitySample\SGA_Sample\Builds\Sample1_Data\Managed\System.dll (this message is harmless)
