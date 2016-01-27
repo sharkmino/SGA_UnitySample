@@ -13,7 +13,22 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float tilt;
     public Boundary boundary;
+
+    public GameObject shot;
+    public Transform shotSpwan;
+
+    public float fireMate;
+
+    private float maxFire;
     
+    void Update()
+    {
+        if(Input.GetButton("Fire1") && Time.time > maxFire)
+        {
+            maxFire = Time.time * fireMate;
+            Instantiate(shot, shotSpwan.position, shotSpwan.rotation); 
+        } 
+    }
 
     // Unity가 각 고정 물리 단계전에 호출
     void FixedUpdate()
