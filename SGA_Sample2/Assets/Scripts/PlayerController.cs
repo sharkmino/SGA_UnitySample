@@ -25,8 +25,9 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetButton("Fire1") && Time.time > maxFire)
         {
-            maxFire = Time.time * fireMate;
-            Instantiate(shot, shotSpwan.position, shotSpwan.rotation); 
+            maxFire = Time.time + fireMate;
+            Instantiate(shot, shotSpwan.position, shotSpwan.rotation);
+            audio.Play();
         } 
     }
 
