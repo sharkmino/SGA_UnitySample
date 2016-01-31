@@ -46,6 +46,8 @@ public class PlayerShooting : MonoBehaviour
 
     public void DisableEffects ()
     {
+        // SetActvie : 전체 컴포넌트
+        // enabled : 하나의 컴포넌트
         gunLine.enabled = false;
         gunLight.enabled = false;
     }
@@ -65,7 +67,9 @@ public class PlayerShooting : MonoBehaviour
         gunLine.enabled = true;
         gunLine.SetPosition (0, transform.position);
 
+        // 광선의 시작
         shootRay.origin = transform.position;
+        // 광선의 방향
         shootRay.direction = transform.forward;
 
         if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
